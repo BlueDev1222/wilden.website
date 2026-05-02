@@ -7,137 +7,148 @@
 
 <link rel="icon" href="WILDEN_LOGO_FULL_QUALITY_OFFICIAL.png">
 
-<!-- 🔥 DISCORD EMBED -->
-<meta property="og:title" content="Wilden SMP">
-<meta property="og:description" content="Join Wilden SMP! Explore, vote, shop, and play with the community. IP: play.wilden.fun | Port: 19132">
-<meta property="og:image" content="https://wilden.wiki/WILDEN_BANNER_NO_BG%20(1)(1).png">
-<meta property="og:url" content="https://wilden.wiki">
-<meta property="og:type" content="website">
-
-<!-- Twitter Embed -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Wilden SMP">
-<meta name="twitter:description" content="Join Wilden SMP! IP: play.wilden.fun | Port: 19132">
-<meta name="twitter:image" content="https://wilden.wiki/WILDEN_BANNER_NO_BG%20(1)(1).png">
-
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  min-height:100vh;
-  font-family:Arial;
-  color:white;
-  background:linear-gradient(rgba(5,20,8,0.85), rgba(0,0,0,0.95)),
-  url("wilden_bg.png") center/cover no-repeat fixed;
-  display:flex;
-  flex-direction:column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background:
+    linear-gradient(rgba(5,20,8,0.85), rgba(0,0,0,0.95)),
+    url("wilden_bg.png") center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-  flex:1;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:50px 20px 100px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 25px 90px;
 }
 
 .container {
-  max-width:1000px;
-  width:100%;
-  background:rgba(0,0,0,0.75);
-  border-radius:25px;
-  padding:40px;
-  text-align:center;
+  width: 100%;
+  max-width: 1050px;
+  background: rgba(0,0,0,0.72);
+  border: 1px solid rgba(85,255,130,0.35);
+  border-radius: 28px;
+  padding: 38px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0,255,100,0.22);
+  backdrop-filter: blur(10px);
 }
 
 h1 {
-  font-size:3rem;
-  color:#7cff8a;
+  font-size: 3.2rem;
+  color: #7cff8a;
+  text-shadow: 0 0 18px rgba(124,255,138,0.75);
 }
 
 .subtitle {
-  margin:10px 0 25px;
+  margin: 10px 0 24px;
+  color: #d7ffd9;
 }
 
+/* SERVER BOX */
 .server-box {
-  margin-bottom:30px;
+  margin: 0 auto 30px;
+  max-width: 420px;
+  padding: 18px;
+  background: linear-gradient(135deg, rgba(0,70,20,0.9), rgba(0,30,10,0.9));
+  border-radius: 18px;
 }
 
-.ip {
-  font-size:1.3rem;
-  font-weight:bold;
-  color:#7cff8a;
-}
+.ip { font-size: 1.3rem; font-weight: bold; color: #7cff8a; }
+.port { font-size: 0.9rem; color: #c8ffc8; }
 
+/* CARDS */
 .links {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  padding:25px;
-  border-radius:15px;
-  background:#163d1f;
-  text-decoration:none;
-  color:white;
-  transition:.2s;
+  padding: 25px;
+  text-decoration: none;
+  color: white;
+  border-radius: 18px;
+  background: rgba(20,60,25,0.9);
+  transition: 0.25s;
 }
 
 .card:hover {
-  transform:translateY(-5px);
-  background:#1f5c2d;
+  transform: translateY(-5px);
+  background: rgba(30,90,40,1);
 }
 
 .icon {
-  font-size:2rem;
-  margin-bottom:10px;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
 .footer {
-  background:#111a20;
-  padding:70px 20px 30px;
+  background: #111a20;
+  padding: 70px 20px 30px;
+  position: relative;
+}
+
+.footer-banner {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
 }
 
 .footer-content {
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  flex-wrap:wrap;
-  gap:20px;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-left p {
+  color: #aaa;
+  margin-top: 8px;
 }
 
 /* TEXT SOCIAL BUTTONS */
 .footer-right {
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .social {
-  min-width:100px;
-  height:50px;
-  padding:0 18px;
-  border-radius:12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:bold;
-  text-decoration:none;
-  color:white;
-  transition:.2s;
+  min-width: 100px;
+  height: 50px;
+  padding: 0 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: 0.25s;
 }
 
-.yt { background:#ff3b3b; }
-.ig { background:#ff3cac; }
-.tt { background:#000; }
-.dc { background:#5865f2; }
+/* COLORS */
+.yt { background: #ff3b3b; }
+.ig { background: #ff3cac; }
+.tt { background: #000; }
+.dc { background: #5865f2; }
 
 .social:hover {
-  transform:translateY(-4px);
-  opacity:.85;
+  transform: translateY(-4px);
+  opacity: 0.85;
 }
 </style>
 </head>
@@ -148,12 +159,12 @@ h1 {
 <div class="container">
 
 <h1>Wilden</h1>
-<p class="subtitle">Official Server Hub</p>
+<p class="subtitle">Official Wilden Hub</p>
 
 <div class="server-box">
 <h2>Join the Server</h2>
 <div class="ip">play.wilden.fun</div>
-<div>Port: 19132</div>
+<div class="port">Bedrock Port: 19132</div>
 </div>
 
 <div class="links">
@@ -161,46 +172,66 @@ h1 {
 <a class="card" href="http://map.wilden.fun:25940" target="_blank">
 <div class="icon">🗺️</div>
 <h2>Map</h2>
+<p>Explore the live server map.</p>
 </a>
 
 <a class="card" href="https://store.wilden.fun" target="_blank">
 <div class="icon">🛒</div>
 <h2>Store</h2>
+<p>Buy ranks and perks.</p>
 </a>
 
 <a class="card" href="https://discord.gg/wilden" target="_blank">
 <div class="icon">💬</div>
 <h2>Discord</h2>
+<p>Join the community.</p>
 </a>
 
 <a class="card" href="https://store.wilden.fun/voting" target="_blank">
 <div class="icon">✅</div>
 <h2>Voting</h2>
+<p>Vote and earn rewards.</p>
 </a>
 
 <a class="card" href="https://wilden.wiki" target="_blank">
 <div class="icon">📚</div>
 <h2>Wiki</h2>
+<p>Guides and server info.</p>
 </a>
 
 </div>
+
 </div>
 </main>
 
 <footer class="footer">
+
+<img src="WILDEN_BANNER_NO_BG (1)(1).png" class="footer-banner">
+
 <div class="footer-content">
 
-<div>
-<h3>Wilden SMP</h3>
+<div class="footer-left">
+<h3>WildenSMP All Rights Reserved</h3>
 <p>Not affiliated with Mojang or Microsoft.</p>
 </div>
 
 <div class="footer-right">
 
-<a href="https://www.youtube.com/@wildenserver" target="_blank" class="social yt">YouTube</a>
-<a href="https://www.instagram.com/wilden.fun" target="_blank" class="social ig">Instagram</a>
-<a href="https://www.tiktok.com/@wildenserver" target="_blank" class="social tt">TikTok</a>
-<a href="https://discord.gg/wilden" target="_blank" class="social dc">Discord</a>
+<a href="https://www.youtube.com/@wildenserver" target="_blank" class="social yt">
+YouTube
+</a>
+
+<a href="https://www.instagram.com/wilden.fun" target="_blank" class="social ig">
+Instagram
+</a>
+
+<a href="https://www.tiktok.com/@wildenserver" target="_blank" class="social tt">
+TikTok
+</a>
+
+<a href="https://discord.gg/wilden" target="_blank" class="social dc">
+Discord
+</a>
 
 </div>
 
